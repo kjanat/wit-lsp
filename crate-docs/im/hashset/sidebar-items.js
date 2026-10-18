@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"macro":[["hashset",1]],"struct":["ConsumingIter","HashSet","HashSetPool","Iter"]};

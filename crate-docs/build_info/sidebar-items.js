@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"enum":["CompilerChannel","Endianness","OptimizationLevel","VersionControl"],"macro":[["build_info",1],"format"],"struct":["BuildInfo","CompilerInfo","CpuInfo","CrateInfo","GitInfo","TargetInfo"]};

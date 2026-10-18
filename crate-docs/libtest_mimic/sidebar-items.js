@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"enum":["ColorSetting","Completion","FormatSetting"],"fn":["run"],"struct":["Arguments","Conclusion","Failed","Measurement","Trial"]};

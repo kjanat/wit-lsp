@@ -1,0 +1,9 @@
+(function() {
+    const implementors = Object.fromEntries([["streaming_iterator",[]],["tree_sitter",[["impl&lt;'query, 'tree, T: <a class=\"trait\" href=\"tree_sitter/trait.TextProvider.html\" title=\"trait tree_sitter::TextProvider\">TextProvider</a>&lt;I&gt;, I: <a class=\"trait\" href=\"https://doc.rust-lang.org/1.99.1/core/convert/trait.AsRef.html\" title=\"trait core::convert::AsRef\">AsRef</a>&lt;[<a class=\"primitive\" href=\"https://doc.rust-lang.org/1.99.1/std/primitive.u8.html\">u8</a>]&gt;&gt; <a class=\"trait\" href=\"tree_sitter/trait.StreamingIterator.html\" title=\"trait tree_sitter::StreamingIterator\">StreamingIterator</a> for <a class=\"struct\" href=\"tree_sitter/struct.QueryCaptures.html\" title=\"struct tree_sitter::QueryCaptures\">QueryCaptures</a>&lt;'query, 'tree, '_, T, I&gt;",0],["impl&lt;'query, 'tree, T: <a class=\"trait\" href=\"tree_sitter/trait.TextProvider.html\" title=\"trait tree_sitter::TextProvider\">TextProvider</a>&lt;I&gt;, I: <a class=\"trait\" href=\"https://doc.rust-lang.org/1.99.1/core/convert/trait.AsRef.html\" title=\"trait core::convert::AsRef\">AsRef</a>&lt;[<a class=\"primitive\" href=\"https://doc.rust-lang.org/1.99.1/std/primitive.u8.html\">u8</a>]&gt;&gt; <a class=\"trait\" href=\"tree_sitter/trait.StreamingIterator.html\" title=\"trait tree_sitter::StreamingIterator\">StreamingIterator</a> for <a class=\"struct\" href=\"tree_sitter/struct.QueryMatches.html\" title=\"struct tree_sitter::QueryMatches\">QueryMatches</a>&lt;'query, 'tree, '_, T, I&gt;",0]]]]);
+    if (window.register_implementors) {
+        window.register_implementors(implementors);
+    } else {
+        window.pending_implementors = implementors;
+    }
+})()
+//{"start":59,"fragment_lengths":[25,1445]}
