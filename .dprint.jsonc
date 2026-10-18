@@ -1,0 +1,49 @@
+{
+  "$schema": "https://dprint.dev/schemas/v0.json",
+  "json": {
+    "useTabs": false,
+    "indentWidth": 4,
+    "overrides": [
+      { "files": [".vscode/{tasks,launch}.json", "**/tsconfig.json"], "useTabs": true },
+      {
+        "files": [".vscode/extensions.json", ".dprint.jsonc", "**/package.json", "**/diagnostics.json"],
+        "indentWidth": 2
+      }
+    ]
+  },
+  "yaml": { "printWidth": 160 },
+  "exec": {
+    "cwd": "${configDir}",
+    "cacheKey": "1",
+    "timeout": 30,
+    "commands": [{
+      "command": "tombi format - --stdin-filename {{file_path}}",
+      "exts": ["toml"]
+    }, {
+      "command": "rustfmt --edition 2024",
+      "exts": ["rs"]
+    }]
+  },
+  "plugins": [
+    "npm:@dprint/exec@0.8.0/plugin.json@9d6234ea05810c775f388c2a4cce82b9116b69294b65e0e1e9d64f1446283ef3",
+    "npm:@dprint/json@0.25.2",
+    "npm:dprint-plugin-yaml@0.6.0"
+  ],
+  "excludes": [
+    "**/*.snap",
+    "**/*.snap.new",
+    "**/*.vsix",
+    "**/*generated*",
+    "**/.vscode-test/**",
+    "**/dist/**",
+    "**/node_modules/**",
+    "**/out/**",
+    "**/package-lock.json",
+    "**/target/**",
+    "Cargo.lock",
+    "crates/wit-compiler/src/diagnostics/all.rs",
+    "crates/wit-compiler/src/diagnostics/diagnostics.json",
+    "crates/wit-language-server/src/code_actions/all.rs",
+    "public/**",
+  ]
+}
