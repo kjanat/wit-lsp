@@ -34,6 +34,12 @@ An alternative Language Server implementation for [WIT][wit].
   - [ ] Merge imports
   - [ ] Sort items
 
+## Install
+
+```sh
+cargo install --git 'https://github.com/kjanat/wit-lsp' 'wit-cli' --locked --branch 'master' --bin 'wit'
+```
+
 ## Workspace files
 
 The server discovers `.wit` files in workspace folders, including WIT dependency
@@ -81,3 +87,5 @@ do their best to avoid them, and welcome help in analysing and fixing them.
 [error-codes]: https://michael-f-bryan.github.io/wit-lsp/error-codes.html
 [vscode-wit]: https://github.com/bytecodealliance/vscode-wit
 [wit]: https://github.com/WebAssembly/component-model/blob/main/design/mvp/WIT.md
+
+<!-- rumdl-disable-file -->
